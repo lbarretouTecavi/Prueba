@@ -12,7 +12,7 @@ public class AndroidFirebaseApp extends Application {
     public void onCreate() {
         super.onCreate();
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel fcmChannel = new NotificationChannel(FCM_CHANNEL_ID, "FCM_Channel", NotificationManager.IMPORTANCE_UNSPECIFIED);
+            NotificationChannel fcmChannel = new NotificationChannel(FCM_CHANNEL_ID, "FCM_Channel", NotificationManager.IMPORTANCE_MAX);
             NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
             manager.createNotificationChannel(fcmChannel);
         }

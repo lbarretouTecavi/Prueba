@@ -32,13 +32,13 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     private void sendNotification(@NonNull RemoteMessage message) {
         Intent intent = new Intent(this, TaskView.class);
 
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_IMMUTABLE);
 
         String channelId = "fcm_default_channel";
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, channelId)
                 .setContentTitle(message.getNotification().getTitle())
                 .setContentText(message.getNotification().getBody())
-                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setPriority(NotificationCompat.PRIORITY_MAX)
                 .setSmallIcon(R.drawable.ic_upload_data)
                 .setAutoCancel(true)
                 .setContentIntent(pendingIntent);
@@ -46,7 +46,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel(channelId, "FCM notification channel", NotificationManager.IMPORTANCE_HIGH);
+            NotificationChannel channel = new NotificationChannel(channelId, "FCM notification channel", NotificationManager.IMPORTANCE_MAX);
             manager.createNotificationChannel(channel);
         }
         manager.notify(new Random().nextInt(), notificationBuilder.build());
