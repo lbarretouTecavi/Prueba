@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomNavigationMenuListTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Lista"
+        android:icon="@drawable/ic_task_list"/>
+    <item
+        android:id="@+id/bottomNavigationMenuAddTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Agregar"
+        android:icon="@drawable/ic_task_add"/>
+    <item
+        android:id="@+id/bottomNavigationMenuListCheckTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Completado"
+        android:icon="@drawable/ic_task_list_check"/>
+    <item
+        android:id="@+id/bottomNavigationMenuListTaskRealtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Tiempo real"
+        android:icon="@drawable/ic_realtime"/>
+    <item
+        android:id="@+id/bottomNavigationMenuListApiTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Api"
+        android:icon="@drawable/ic_server_data"/>
+</menu>

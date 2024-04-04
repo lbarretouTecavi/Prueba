@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "21782535374",
+    "project_id": "pruebafastadapter",
+    "storage_bucket": "pruebafastadapter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21782535374:android:958a19af554deabda5c49f",
+        "android_client_info": {
+          "package_name": "com.example.pruebafastadapter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3PT_gvpNBx0zmmFhnwc3AjZ2a0zGR3z8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="successSincronizedColor" tools:ignore="MissingDefaultResource">#dbffbf</color>
+    <color name="ErrorSincronizedColor" tools:ignore="MissingDefaultResource">#ffa1a1</color>
+</resources>
